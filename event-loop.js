@@ -2,7 +2,8 @@ const fs = require('fs');
 const crypto = require('crypto');
 
 const start = Date.now();
-process.env.UV_THREADPOOL_SIZE = 1;
+// process.env.UV_THREADPOOL_SIZE = 1;
+// Try this console command instead: set UV_THREADPOOL_SIZE=1 & node event-loop.js
 
 setTimeout(() => console.log('Timer 1 finished.'), 0);
 setImmediate(() => console.log('Immediate 1 finished.'));
